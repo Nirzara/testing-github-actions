@@ -19,7 +19,9 @@ jobs:
       key: ${{runner.os}}-maven-${{hashFiles('**/pom.xml')}}
       restore-keys: ${{runner.os}}-maven
    - name: clean package
-     run: mvn clean package
+     run: |
+          cd new-code/greet/
+          mvn clean package
  deploy:
   runs-on: ubuntu-latest
   needs: build
