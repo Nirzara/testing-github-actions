@@ -21,7 +21,7 @@ jobs:
    - name: clean package
      run: |
           cd new-code/greet/
-          mvn clean install
+          mvn clean package
    - name: List all contents of target
      run: |
          cd new-code/greet/target/
