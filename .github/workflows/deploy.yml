@@ -20,17 +20,17 @@ jobs:
       restore-keys: ${{runner.os}}-maven
    - name: clean package
      run: |
-          cd new-code/greet/
+          cd greet/
           mvn clean package
    - name: List all contents of target
      run: |
-         cd new-code/greet/target/
+         cd greet/target/
          ls -al
    - name: deploy to azure
      uses: azure/webapps-deploy@v2
      with:
       app-name: rest-github-azure
       publish-profile: ${{secrets.AZURE_WEBAPP_PUBLISH_PROFILE}}
-      package: new-code/greet/target/greet-0.0.1-SNAPSHOT.war
+      package: greet/target/greet-0.0.1-SNAPSHOT.war
       
       
