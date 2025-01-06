@@ -1,0 +1,35 @@
+name: Deploying Hello World Application
+on:
+ workflow_dispatch:
+jobs:
+ build:
+  runs-on: ubuntu-latest
+  steps:
+   - name: checkout repo
+     uses: actions/checkout@v3
+   - name: set up java
+     uses: actions/setup-java@v3
+     with:
+       java-version: 17
+       distribution: 'zulu'
+   - name: caching maven dependencies
+     uses: actions/cache@v3
+     with:
+      path: ./m2
+      keys: ${{runner.os}}-maven-${{hashFiles('**/pom.xml')}}
+      restore-keys: ${{runner.os}}-maven
+   - name: clean package
+     run: mvn clean package
+ deploy:
+  runs-on: ubuntu-latest
+  steps:
+   - name: checkout code
+     uses: actions/checkout@v3
+   - name: deploy to azure
+     uses: azure/webapps-deploy@v2
+     with:
+      app-name: rest-github-azure
+      publish-profile: ${{secrets.AZURE_WEBAPP_PUBLISH_PROFILE}}
+      package: target/*.jar
+      
+      
