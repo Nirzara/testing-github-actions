@@ -1,0 +1,10 @@
+INSERT INTO EMPLOYEE (empid, city, country, email, name, state) VALUES (1, 'New York', 'USA', 'johndoe@example.com', 'John Doe', 'NY');
+INSERT INTO EMPLOYEE (empid, city, country, email, name, state) VALUES (2, 'Los Angeles', 'USA', 'janesmith@example.com', 'Jane Smith', 'CA');
+INSERT INTO EMPLOYEE (empid, city, country, email, name, state) VALUES (3, 'Chicago', 'USA', 'samuelgreen@example.com', 'Samuel Green', 'IL');
+INSERT INTO EMPLOYEE (empid, city, country, email, name, state) VALUES (4, 'Miami', 'USA', 'emmabrown@example.com', 'Emma Brown', 'FL');
+INSERT INTO EMPLOYEE (empid, city, country, email, name, state) VALUES (5, 'Austin', 'USA', 'williamharris@example.com', 'William Harris', 'TX');
+INSERT INTO EMPLOYEE (empid, city, country, email, name, state) VALUES (6, 'New York', 'USA', 'lucywhite@example.com', 'Lucy White', 'NY');
+INSERT INTO EMPLOYEE (empid, city, country, email, name, state) VALUES (7, 'Los Angeles', 'USA', 'michaelclark@example.com', 'Michael Clark', 'CA');
+INSERT INTO EMPLOYEE (empid, city, country, email, name, state) VALUES (8, 'Chicago', 'USA', 'emilydavis@example.com', 'Emily Davis', 'IL');
+INSERT INTO EMPLOYEE (empid, city, country, email, name, state) VALUES (9, 'Miami', 'USA', 'danielmartin@example.com', 'Daniel Martin', 'FL');
+INSERT INTO EMPLOYEE (empid, city, country, email, name, state) VALUES (10, 'Austin', 'USA', 'olivialopez@example.com', 'Olivia Lopez', 'TX');

@@ -1,0 +1,5 @@
+com\example\demo\RestGithubActionsAzureApplication.class
+com\example\demo\web\EmployeeController.class
+com\example\demo\dao\EmployeeDao.class
+com\example\demo\entities\Employee.class
+com\example\demo\ServletInitializer.class
