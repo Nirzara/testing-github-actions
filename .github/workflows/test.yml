@@ -27,8 +27,7 @@ jobs:
        cd hello/target/
        ls -al
    - name: deploy jar file
-     run: |
-       cd  azure/webapps-deploy@v2
+     uses: azure/webapps-deploy@v2
      with:
       app-name: test-azure-webapp
       publish-profile: ${{secrets.AZURE_WEBAPP_PUBLISH_PROFILE}}
